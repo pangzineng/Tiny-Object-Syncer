@@ -6,7 +6,4 @@ workflow "build and push image" {
 action "pangzineng/Github-Action-One-Click-Docker@master" {
   uses = "pangzineng/Github-Action-One-Click-Docker@master"
   secrets = ["DOCKER_USERNAME", "DOCKER_PASSWORD"]
-  env = {
-    BRANCH_FILTER = "master"
-  }
 }
